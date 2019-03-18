@@ -197,6 +197,7 @@ private extension SKAnimator {
             options: UIView.AnimationOptions(),
             animations: {
                 self.backgroundView.alpha = 0.0
+                self.resizableImageView?.alpha = 0.0
                 self.resizableImageView?.layer.frame = finalFrame
             },
             completion: { (_) -> Void in
